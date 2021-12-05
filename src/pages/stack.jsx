@@ -45,7 +45,22 @@ const Stack = () => (
           <Inner>
             <Themed.h1>Open Source Stack</Themed.h1>
             <Themed.p>
-              <img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fngninja.com%2Fposts%2Freact-crash-course&psig=AOvVaw123Oa0l5qyo-sNynFYuoXR&ust=1638753148083000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNCSnq69y_QCFQAAAAAdAAAAABAD' />
+              <img src='https://lh3.googleusercontent.com/isLdXNXSkJKT5CUY-S4ZfK2q_BwrhoNKF2GQVwoo0IEAsOj-CABaJrBCw_K0s9vp03q7ZyGd2a5EfABoBEPPN4LZz_uV2ofS0xCkRYlVjZFB1HpMM0gccvzGGT2v5yTH2f10UhZ6'  width="600" height="400" />
+            </Themed.p>
+            <Themed.h2>See Elements of an Open Source Stack on the <Link to='/'>Home Page</Link></Themed.h2>
+            <Themed.p>
+              - Open source stack components are free, usually have excellent community support, and offer significant opportunities to develop on further 
+            </Themed.p>
+            <Themed.h3>However, drawbacks include:</Themed.h3>
+            <Themed.p>
+              - If a feature breaks, there is no gaurantee that bugs will be patched in any reasonable amount of time. 
+              In fact, for some open source projects, when you identify a bug it is highly encouraged that along with your 
+              bug report you submit a revision of the feature! For example, in the Flux.CD community, while development
+              happens among a hundred or so individuals, forks of the repo are regularly accepted and merged to improve 
+              compatibility with other, more niche platforms. 
+            </Themed.p>
+            <Themed.p>
+              - Development of new or specialized features tend to be less frequent than for profit-drive-projects.
             </Themed.p>
           </Inner>
         </Content>

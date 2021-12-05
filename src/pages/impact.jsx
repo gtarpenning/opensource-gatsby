@@ -45,11 +45,18 @@ const Impact = () => (
             <Inner>
               <Themed.h1>The Impact of Open Source</Themed.h1>
               <Themed.p>
-                <img src='https://i1.rgstatic.net/publication/313891500_Impact_of_Financial_Benefits_on_Open_Source_Software_Sustainability/links/5a667df6aca2720ba6af5017/largepreview.png' />
+                <img src='https://i1.rgstatic.net/publication/313891500_Impact_of_Financial_Benefits_on_Open_Source_Software_Sustainability/links/5a667df6aca2720ba6af5017/largepreview.png' width="340" height="440" />
               </Themed.p>
-              <Themed.h2>EU</Themed.h2>
               <Themed.p>
-  
+              - European Commission: “It is estimated that companies located in the EU invested around €1 billion in Open Source Software in 2018, which brought about a positive impact on the European economy of between €65 and €95 billion.”
+              </Themed.p>
+              <Themed.p>
+              - Black Duck Software and North Bridge's survey that found 78% of companies run on Open-Source software (run part or all opps in OSS). (2015)
+              </Themed.p>
+              <Themed.p>
+              - As part of that same study, they also found 64 percent of companies currently participate in open source projects              </Themed.p>
+              <Themed.p>
+              - From  Red Hat’s new 2020 State of Enterprise Open Source Report: 83 percent said that enterprise open source is instrumental to their organizations’ abilities to take advantage of cloud architectures.
               </Themed.p>
             </Inner>
           </Content>

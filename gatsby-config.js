@@ -8,11 +8,12 @@ module.exports = {
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
     siteTitle: `Open-source`,
+    siteTitleAlt: `OpenSource`,
     siteHeadline: `Open Source`,
-    siteUrl: `https://opensourcegatsby.gatsbyjs.io/`,
+    siteUrl: `https://opensource.gatsbyjs.io/`,
     siteDescription: `CS208e Project on the Open Source Movement`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
+    siteImage: `/osi.png`,
     author: `griffin`,
   },
   plugins: [
@@ -24,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
+        name: `Open Source`,
         short_name: `Cara`,
         description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
         start_url: `/`,

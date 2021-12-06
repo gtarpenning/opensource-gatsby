@@ -45,7 +45,7 @@ const Stack = () => (
           <Inner>
             <Themed.h1>Open Source Stack</Themed.h1>
             <Themed.p>
-              <img src='https://lh3.googleusercontent.com/isLdXNXSkJKT5CUY-S4ZfK2q_BwrhoNKF2GQVwoo0IEAsOj-CABaJrBCw_K0s9vp03q7ZyGd2a5EfABoBEPPN4LZz_uV2ofS0xCkRYlVjZFB1HpMM0gccvzGGT2v5yTH2f10UhZ6'  width="600" height="400" />
+              <img alt='go' src='https://lh3.googleusercontent.com/isLdXNXSkJKT5CUY-S4ZfK2q_BwrhoNKF2GQVwoo0IEAsOj-CABaJrBCw_K0s9vp03q7ZyGd2a5EfABoBEPPN4LZz_uV2ofS0xCkRYlVjZFB1HpMM0gccvzGGT2v5yTH2f10UhZ6'  width="600" height="400" />
             </Themed.p>
             <Themed.h2>See Elements of an Open Source Stack on the <Link to='/'>Home Page</Link></Themed.h2>
             <Themed.p>

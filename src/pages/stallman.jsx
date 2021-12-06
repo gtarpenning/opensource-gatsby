@@ -1,16 +1,33 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import React, { useState, useEffect } from "react";
 import { Parallax } from "@react-spring/parallax"
 import { Themed } from "theme-ui"
 import Layout from "@lekoarts/gatsby-theme-cara/src/components/layout"
 import Divider from "@lekoarts/gatsby-theme-cara/src/elements/divider"
 import { UpDown, UpDownWide } from "@lekoarts/gatsby-theme-cara/src/styles/animations"
 import Svg from "@lekoarts/gatsby-theme-cara/src/components/svg"
-import Seo from "@lekoarts/gatsby-theme-cara/src/components/seo"
 import Content from "@lekoarts/gatsby-theme-cara/src/elements/content"
 import Inner from "@lekoarts/gatsby-theme-cara/src/elements/inner"
 
-const Stallman = () => (
+
+const Stallman = () => {
+  const MAX_ARTICLES = 10;
+  const [articles, setArticles] = useState();
+
+  useEffect(() => {
+    const loadArticles = async () => {
+      fetch('https://stallman.org/rss/rss.xml', { headers: { Accept: "application/json" } })
+      .then((res) => res.json())
+      .then((data) => data.items.filter((item) => item.title.length > 0))
+      .then((newArticles) => newArticles.slice(0, MAX_ARTICLES))
+      .then((articles) => setArticles(articles))
+      .catch((error) => console.log(error));
+      };
+    loadArticles();
+  }, [MAX_ARTICLES])
+
+  console.log(articles)
+  
+  return (
   <Layout>
     <Parallax pages={2}>
       <div>
@@ -46,7 +63,7 @@ const Stallman = () => (
           <Inner>
             <Themed.h1>Richard Stallman</Themed.h1>
             <Themed.p>
-              <img src='https://media.wired.com/photos/5d815ffe46103c0009de8d56/master/w_960,c_limit/science_stallman_473688628.jpg' />
+              <img alt='stall' src='https://media.wired.com/photos/5d815ffe46103c0009de8d56/master/w_960,c_limit/science_stallman_473688628.jpg' />
             </Themed.p>
             <Themed.h2>Background</Themed.h2>
             <Themed.p>
@@ -64,11 +81,20 @@ const Stallman = () => (
             <Themed.p>
 
             </Themed.p>
-          </Inner>
+            <Themed.h2>
+              Official Stallman RSS Feed:
+            </Themed.h2>
+            </Inner>
+          </Content>
+          <Content sx={{ variant: `texts.bigger` }} speed={0.4} offset={.85} factor={2} backgroundColor='gray'>
+            <iframe height="1100" width="75%" frameBorder="0" scrolling="auto" title="lol"
+                    style={{background: "lightgray", borderRadius: "25px", padding: "10px"}}
+                    src="https://stallman.org/iframe-feed.html">If</iframe>
         </Content>
       </div>
     </Parallax>
   </Layout>
-)
+  )
+}
 
-export default Stallman
+export default Stallman;
